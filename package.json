@@ -1,0 +1,51 @@
+{
+  "name": "tangany-test-token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "npm run build",
+    "start:develop": "truffle develop",
+    "build": "truffle compile",
+    "deploy:mainnet": "truffle migrate --network mainnet",
+    "deploy:ropsten": "truffle migrate --network ropsten",
+    "deploy:goerli": "truffle migrate --network goerli",
+    "deploy:mumbai": "truffle migrate --network mumbai",
+    "deploy:private": "truffle migrate --network private",
+    "deploy:development": "truffle migrate --network development",
+    "list:compilers": "truffle compile --list",
+    "prebuild": "rimraf ./build/contracts/*",
+    "preinstall": "npx npm-force-resolutions",
+    "postinstall": "cpr .env.example .env",
+    "verify:ropsten": "truffle run verify --network ropsten",
+    "verify:goerli": "truffle run verify --network goerli",
+    "verify:mumbai": "truffle run verify --network mumbai",
+    "verify:mainnet": "truffle run verify --network mainnet",
+    "test": "truffle test ./test/payments.js --show-events"
+  },
+  "keywords": [],
+  "private": true,
+  "author": "Tangany <developers@tangany.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.6",
+    "cpr": "^3.0.1",
+    "dotenv": "^16.0.0",
+    "marked": "^4.0.12",
+    "node-fetch": "^3.2.1",
+    "rimraf": "^3.0.2",
+    "truffle": "^5.1.67",
+    "truffle-plugin-verify": "^0.5.2",
+    "vercel": "^28.15.3"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.8.1"
+  },
+  "resolutions": {
+    "node-fetch": "3.2.1",
+    "marked": "4.0.12"
+  }
+}
