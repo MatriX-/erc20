@@ -35,7 +35,7 @@
     "cpr": "^3.0.1",
     "dotenv": "^16.0.0",
     "marked": "^4.0.12",
-    "node-fetch": "^3.2.1",
+    "node-fetch": "^3.2.10",
     "rimraf": "^3.0.2",
     "truffle": "^5.1.67",
     "truffle-plugin-verify": "^0.5.2",
@@ -45,7 +45,7 @@
     "@openzeppelin/contracts": "^4.8.1"
   },
   "resolutions": {
-    "node-fetch": "3.2.1",
+    "node-fetch": "3.2.10",
     "marked": "4.0.12"
   }
 }
