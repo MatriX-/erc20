@@ -42,7 +42,7 @@
     "vercel": "^28.15.3"
   },
   "devDependencies": {
-    "@openzeppelin/contracts": "^4.8.1"
+    "@openzeppelin/contracts": "^4.8.2"
   },
   "resolutions": {
     "node-fetch": "3.2.1",
